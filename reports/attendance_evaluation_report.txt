@@ -1,0 +1,31 @@
+============================================================
+ATTENDANCE ANOMALY DETECTION — EVALUATION REPORT
+Generated : 2026-04-24 13:47:39
+Dataset   : attendance_features.csv  (500 students)
+============================================================
+
+CONFUSION MATRIX
+----------------------------------------
+                     Pred: Normal   Pred: Anomalous
+Actually Normal            421              9
+Actually Anomalous           9             61
+
+CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+      Normal       0.98      0.98      0.98       430
+   Anomalous       0.87      0.87      0.87        70
+
+    accuracy                           0.96       500
+   macro avg       0.93      0.93      0.93       500
+weighted avg       0.96      0.96      0.96       500
+
+
+SANITY CHECK
+----------------------------------------
+Student with 99% attendance -> NORMAL      (expected: NORMAL)
+Student with 36% attendance -> ANOMALOUS   (expected: ANOMALOUS)
+
+Sanity Check: PASSED
+============================================================
